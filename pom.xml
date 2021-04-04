@@ -43,11 +43,11 @@
             <plugin>
                 <groupId>com.heroku.sdk</groupId>
                 <artifactId>heroku-maven-plugin</artifactId>
-                <version>0.4.4</version>
+                <version>3.0.3</version>
                 <configuration>
                     <appName>ejemplo</appName>
                     <processTypes>
-                        <web>java $JAVA_OPTS -jar target/dependency/jetty-runner.jar --port $PORT target/*.war</web>
+                        <web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web>
                     </processTypes>
                     <stack>cedar-14</stack>
                     <jdkVersion>1.</jdkVersion>
