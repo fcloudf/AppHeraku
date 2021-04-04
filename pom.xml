@@ -35,15 +35,17 @@
             <artifactId>mssql-jdbc</artifactId>
             <version>9.2.1.jre8</version>
         </dependency>
+        
+     
 
     </dependencies>
 
     <build>
         <plugins>
             <plugin>
-                <groupId>com.heroku.sdk</groupId>
-                <artifactId>heroku-maven-plugin</artifactId>
-                <version>3.0.3</version>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>3.0.2</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
