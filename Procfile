@@ -1,1 +1,0 @@
-web: java -war target/AppHeraku-1.0-SNAPSHOT.war $PORT
